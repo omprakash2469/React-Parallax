@@ -4,29 +4,42 @@ import { homeRevolveBg, reactLogo } from "./assets";
 export default function App() {
   return (
     <>
+      <div className="fixed animate-fade z-20 inset-0 w-full grid place-items-center bg-gradient-to-br from-indigo-900 to-indigo-950">
+        <div>
+          <img src={reactLogo} alt="" />
+          <p></p>
+        </div>
+      </div>
       <nav className="py-10 px-14 flex justify-between container mx-auto bg-[#1f1f1f] items-center">
         <div>
-          <img src={reactLogo} alt="" className="w-16" />
+          <img
+            src={reactLogo}
+            alt=""
+            className="w-16 cursor-pointer animate-wave"
+          />
         </div>
 
         <div className="flex justify-between items-center">
-          <ul className="uppercase  flex mr-6 space-x-12">
-            <li className="text-white text-[11px] font-bold tracking-wider">
+          <ul className="uppercase  flex mr-14 space-x-12">
+            <li className="text-white text-[11px] font-bold tracking-wider cursor-pointer">
               Home
             </li>
-            <li className="text-white text-[11px] font-bold tracking-wider">
-              About
+            <li className="text-white text-[11px] font-bold tracking-wider cursor-pointer">
+              About Us
             </li>
-            <li className="text-white text-[11px] font-bold tracking-wider">
-              Reviews
+            <li className="text-white text-[11px] font-bold tracking-wider cursor-pointer">
+              Services
             </li>
-            <li className="text-white text-xs font-bold tracking-wider">
-              Contact
+            <li className="text-white text-xs font-bold tracking-wider cursor-pointer">
+              Work
+            </li>
+            <li className="text-white text-xs font-bold tracking-wider cursor-pointer">
+              Careers
             </li>
           </ul>
 
-          <button className="border-2 px-12 py-3 text-white text-[11px] font-bold tracking-wider uppercase flex">
-            <span className="mr-3">Contact</span>
+          <button className="border-2 hover:bg-white cursor-pointer transition-all px-12 py-4 text-white text-[11px] font-bold tracking-wider uppercase flex hover:text-black">
+            <span className="mr-3">Contact Us</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -40,13 +53,17 @@ export default function App() {
       </nav>
 
       <header className="bg-[#1f1f1f] py-20  container mx-auto">
-        <h1 className="text-4xl text-white font-semibold  p-14 w-[520px]">
-          West Coast Brandmakers with a global edge.
+        <h1 className="text-4xl text-white font-medium font-poppins p-14 w-[620px]">
+          <p>West Coast Brandmakers</p> <p> with a global edge.</p>
         </h1>
-        <div className="relative">
-          <img src={homeRevolveBg} alt="" />
-          <h1 className="text-6xl absolute top-10 left-0 text-white font-semibold  p-14 w-[520px]">
-            Meet Revolve
+        <div className="relative h-[420px]">
+          <img
+            src={homeRevolveBg}
+            alt=""
+            className="w-full h-full object-cover object-right-bottom"
+          />
+          <h1 className="text-7xl absolute top-10 left-0 text-white font-semibold  p-14">
+            Meet <i>Revolve</i>
           </h1>
         </div>
       </header>
