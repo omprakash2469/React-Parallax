@@ -23,11 +23,11 @@ export default {
       },
       keyframes: {
         fade: {
-          from: {
+          "0%": {
             opacity: "1",
             visibility: "visible",
           },
-          to: {
+          "100%": {
             opacity: "0",
             visibility: "hidden",
           },
