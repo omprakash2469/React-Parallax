@@ -3,24 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.wave-divider {
+/* Navigation Button Hover */
+.contact-btn::before {
+  content: "";
   position: absolute;
+  height: 100%;
+  width: 0%;
   top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+  left: -40px;
+  /* transform: skew(45deg); */
+  transform: skewX(45deg);
+  background-color: white;
+  z-index: -1;
+  transition: all 0.6s;
 }
 
-.wave-divider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 67px;
-  transform: rotateY(180deg);
-}
-
-.wave-divider .shape-fill {
-  fill: #1f1f1f !important;
+.contact-btn:hover::before {
+  width: 160%;
 }
