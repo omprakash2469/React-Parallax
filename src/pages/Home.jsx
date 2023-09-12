@@ -1,6 +1,7 @@
 import React from "react";
-import { homeRevolveBg, reactLogo } from "../assets";
+import { reactLogo } from "../assets";
 import Navbar from "../components/Layout/Navbar";
+import ParallaxCircle from "../components/ParallaxCircle";
 
 export default function Home() {
   return (
@@ -69,6 +70,8 @@ export default function Home() {
       </header>
 
       <div className="theme-background animate-slideDown absolute -top-[120vh] z-30 animation-delay-4000 w-full h-[100svh]"></div>
+
+      <ParallaxCircle />
     </>
   );
 }
