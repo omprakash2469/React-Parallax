@@ -27,7 +27,7 @@ const menu = [
 
 export default function Navbar() {
   return (
-    <nav className="py-10 px-20 bg-[#1f1f1f] absolute left-0 top-0 w-full z-10">
+    <nav className="py-10 opacity-0 animate-solidFadeIn px-20 bg-[#1f1f1f] absolute left-0 top-0 w-full z-0 animation-delay-5000">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/">
           <img
