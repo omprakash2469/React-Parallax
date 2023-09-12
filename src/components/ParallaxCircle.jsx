@@ -19,7 +19,7 @@ export default function ParallaxCircle() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  //   Update and created develop branch
   return (
     <div className="relative theme-background flex justify-center items-center overflow-hidden h-[100svh]">
       <h2 className="text-5xl font-bold absolute top-20 left-14 grid text-white font-poppins gap-y-2 z-20">
