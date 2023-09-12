@@ -27,15 +27,15 @@ const menu = [
 
 export default function Navbar() {
   return (
-    <nav className="py-10 px-20 bg-[#1f1f1f]">
+    <nav className="py-10 px-20 bg-[#1f1f1f] absolute left-0 top-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div>
+        <a href="/">
           <img
             src={reactLogo}
             alt=""
             className="w-16 cursor-pointer animate-wave"
           />
-        </div>
+        </a>
 
         <div className="flex justify-between items-center">
           <ul className="uppercase  flex mr-14 space-x-24">
