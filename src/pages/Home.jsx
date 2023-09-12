@@ -71,7 +71,7 @@ export default function Home() {
 
       <div className="theme-background animate-slideDown absolute -top-[120vh] z-30 animation-delay-4000 w-full h-[100svh]"></div>
 
-      <ParallaxCircle />
+      {/* <ParallaxCircle /> */}
     </>
   );
 }
