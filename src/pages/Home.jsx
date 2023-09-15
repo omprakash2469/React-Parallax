@@ -1,42 +1,12 @@
 import React from "react";
-import { reactLogo } from "../assets";
 import Navbar from "../components/Layout/Navbar";
-import ParallaxCircle from "../components/ParallaxCircle";
+import Preloader from "../components/Preloader";
+import WaveVideo from "../components/WaveVideo";
 
 export default function Home() {
   return (
     <>
-      {/* Preloader */}
-      <div className="fixed grid animate-toInvisible h-full z-20 inset-0 w-full place-items-center bg-gradient-to-br from-indigo-900 to-indigo-950">
-        {/* <div className="fixed  hidden h-full z-20 inset-0 w-full place-items-center bg-gradient-to-br from-indigo-900 to-indigo-950"> */}
-        <div className="relative w-32 h-32">
-          <div className="relative w-32 h-32 animate-rotateFull">
-            <span className="spin-letter">v</span>
-            <span className="spin-letter">i</span>
-            <span className="spin-letter">s</span>
-            <span className="spin-letter">t</span>
-            <span className="spin-letter">a</span>
-            <span className="spin-letter"></span>
-            <span className="spin-letter">c</span>
-            <span className="spin-letter">o</span>
-            <span className="spin-letter">m</span>
-            <span className="spin-letter">m</span>
-            <span className="spin-letter">u</span>
-            <span className="spin-letter">n</span>
-            <span className="spin-letter">i</span>
-            <span className="spin-letter">t</span>
-            <span className="spin-letter">y</span>
-          </div>
-
-          <img
-            src={reactLogo}
-            alt=""
-            className="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          />
-        </div>
-      </div>
-
-      {/* Navigation */}
+      <Preloader />
       <Navbar />
 
       <header className="bg-[#1f1f1f] relative animate-slideDown2 invisible z-40 animation-delay-5000">
@@ -64,14 +34,10 @@ export default function Home() {
           </div>
         </div>
 
-        <video autoPlay loop>
-          <source src="/wave.mp4" type="video/mp4" />
-        </video>
+        <WaveVideo />
       </header>
 
       <div className="theme-background animate-slideDown absolute -top-[120vh] z-30 animation-delay-4000 w-full h-[100svh]"></div>
-
-      {/* <ParallaxCircle /> */}
     </>
   );
 }
